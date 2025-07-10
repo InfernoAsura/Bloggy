@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs")%>
+
+<div class="container">
+<ul class="post-list">
+    <%if(posts.length == 0){%>
+        <h2>No posts are there to look</h2>
+    <%}else{%>
+        <%posts.forEach((post) => {%>
+            <li><h2><a href="/view/<%= posts.indexOf(post) %>"><%=post.title %></a></h2></li>
+        <%})%>
+    <%}%>
+</ul>
+</div>
+
+
+
+
+<%-include("partials/footer.ejs")%>

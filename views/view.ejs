@@ -1,0 +1,19 @@
+<%- include("partials/header.ejs")%>
+
+<div class="post-container">
+    <h2 id="data-title"><%= data.title %></h2>
+    <p><%= data.content %></p>
+    <div class="delete-edit">
+        <form action="/delete/<%= postId %>" method="post" class="delete-form">
+            <button>Delete</button>
+        </form>
+        <form action="/edit/<%= postId %>" method="get" class="edit-form">
+            <button>Edit</button>
+        </form>
+    </div>
+</div>
+
+
+
+
+<%-include("partials/footer.ejs")%>

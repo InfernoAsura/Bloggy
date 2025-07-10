@@ -1,0 +1,159 @@
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* General Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;         /* Center horizontally */
+  justify-content: center;     /* Center vertically if needed */
+  padding: 60px;
+  text-align: left;          /* Center text inside */
+}
+
+
+.delete-edit{
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+}
+
+.delete-form, .edit-form{
+  padding: 3%;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+  z-index: 1000;
+}
+
+/* Post View Page */
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+#data-title {
+  margin-bottom: 3%;
+}
+
+/* Post Creation Form */
+.posting-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.title-box,
+.content-box {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.content-box {
+  height: 400px;
+}
+
+.title-box:focus,
+.content-box:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Post Listing - UL */
+.post-list {
+  list-style: none;  /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.post-list li {
+  margin: 15px 0;
+}
+
+.post-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.post-list a:hover {
+  color: #007BFF;
+}

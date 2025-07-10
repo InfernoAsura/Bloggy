@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs")%>
+
+
+<%if(locals.post){%>
+<form action="/update" method="post" class="posting-container">
+    <textarea class ="title-box" type="text" name="title" placeholder="Enter the title"><%=post.title%></textarea>
+    <textarea class = "content-box" name="content" placeholder="Enter the content"><%=post.content%></textarea>
+    <input hidden type="text" name="index" value="<%= postIndex %>">
+    <button>Update</button>
+</form>
+<%}else{%>
+<form action="/create" method="post" class="posting-container">
+    <textarea class ="title-box" type="text" name="title" placeholder="Enter the title"></textarea>
+    <textarea class = "content-box" name="content" placeholder="Enter the content"></textarea>
+    <button value="/create">Create</button>
+</form>
+<%}%>
+
+
+
+
+<%-include("partials/footer.ejs")%>
